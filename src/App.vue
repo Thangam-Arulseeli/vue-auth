@@ -1,7 +1,9 @@
 <template>
   <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
+     <router-link :to="{name: 'home'}">Home</router-link> |
+    <router-link :to="{name: 'users'}">User</router-link> 
+    <!-- <router-link to="/">Home</router-link>  |   
+    <router-link to="/user">Users</router-link> -->
   </nav>
   <router-view/>
 </template>
@@ -11,7 +13,7 @@
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
+  text-align: left;
   color: #2c3e50;
 }
 
