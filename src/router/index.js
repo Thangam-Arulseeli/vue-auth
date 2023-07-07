@@ -34,7 +34,16 @@ const routes = [
         ]
 
   },
- 
+  {
+  path: '/success',
+    name: 'success',
+    component: () => import('../views/SuccessPage.vue')
+  },
+  {
+    path: '/error',
+      name: 'error',
+      component: () => import('../views/ErrorPage.vue')
+    },
 ]
 
 const router = createRouter({
